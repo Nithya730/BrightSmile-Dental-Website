@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightSmile Dental Clinic</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <div class="logo">BrightSmile</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Your Smile, Our Priority</h1>
+      <p>BrightSmile Dental Clinic provides advanced dental treatments with compassionate care and modern technology.</p>
+      <a href="#contact" class="btn">Book Appointment</a>
+    </div>
+    <div class="hero-image">
+     
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="section-desc">Comprehensive dental solutions for your entire family.</p>
+
+    <div class="service-cards">
+      <div class="card">
+        <h3>Teeth Whitening</h3>
+        <p>Professional whitening treatments to restore your bright, confident smile.</p>
+      </div>
+
+      <div class="card">
+        <h3>Dental Implants</h3>
+        <p>Permanent solutions for missing teeth using advanced implant technology.</p>
+      </div>
+
+      <div class="card">
+        <h3>Orthodontics</h3>
+        <p>Modern braces and aligners to straighten your teeth effectively.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-content">
+    <div class="about-text">
+      <h2>About BrightSmile</h2>
+      <p>With over 10 years of experience, BrightSmile Dental Clinic has been delivering high-quality dental care using advanced equipment and patient-centered treatment plans.</p>
+      <p>Our mission is to provide affordable, comfortable, and personalized dental services for every patient.</p>
+    </div>
+    <div class="about-image">
+      <img src="./Images/pexels-shvetsa-3845653.jpg" alt="Dentist">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container contact-content">
+    <h2>Contact Us</h2>
+    <p class="section-desc">Schedule your visit today.</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- contact -->
+ <!-- <section class="contact-section">
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Success Notification -->
+  <div id="successMessage" class="success-message">
+    ✅ Thank you! Your message has been sent successfully.
+  </div>
+</section> -->
+
+<script src="script.js">
+//   const form = document.getElementById("contactForm");
+// const successMessage = document.getElementById("successMessage");
+
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault(); // Prevent page reload
+
+//   // Show success message
+//   successMessage.style.display = "block";
+
+//   // Clear form
+//   form.reset();
+
+//   // Hide after 3 seconds
+//   setTimeout(() => {
+//     successMessage.style.display = "none";
+//   }, 3000);
+// });
+
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  successMessage.style.display = "block";
+  form.reset();
+
+  setTimeout(() => {
+    successMessage.style.display = "none";
+  }, 3000);
+});
+
+const form = document.getElementById("contactForm");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();   // Stop page refresh
+
+  // Show success message
+  successMessage.style.display = "block";
+
+  // Reset form
+  form.reset();
+});
+</script>
+
+<footer>
+  <div class="container">
+    <p>© 2026 BrightSmile Dental Clinic | All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

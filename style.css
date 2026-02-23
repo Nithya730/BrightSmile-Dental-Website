@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.section-desc {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* HEADER */
+.header {
+  background: #0077b6;
+  padding: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077b6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+  padding: 70px 0;
+  background: #f8f9fa;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ABOUT */
+.about {
+  padding: 70px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 70px 0;
+  background: #f1f1f1;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/*  */
+/* .contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+} */
+
+
+
+/* Success Message Styling */
+.success-message {
+
+  display: none;   /* VERY IMPORTANT */
+  /* margin-top: 15px;
+  padding: 12px; */
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hero-content,
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
